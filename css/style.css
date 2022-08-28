@@ -1,0 +1,383 @@
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    left: -50%;
+    top: -20px;
+    background: rgb(255 255 255 / 50%);
+    height: 250%;
+    transform: rotate(25deg);
+    transition: 1s;
+}
+
+.btn:hover::before {
+    left: 150%;
+}
+
+.width {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto !important;
+}
+
+/* Head */
+#head {
+    background: url('../imgs/banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+#head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+#head .banner {
+    background: #FFCB0F;
+}
+
+#head .row i {
+    color: #000;
+}
+
+#head .img {
+    width: 16px !important;
+    filter: brightness(0);
+}
+
+#head .navbar {
+    background: #222533;
+}
+
+#head .navbar-brand>p {
+    margin-top: -5px !important;
+    margin-bottom: 0 !important;
+}
+
+#head .nav-item a:hover {
+    color: #FFCB0F;
+}
+
+#head .nav-item a i:hover {
+    color: #fff;
+}
+
+#head .big {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+#head>.container {
+    margin-top: 30%;
+}
+
+#head>.container a {
+    margin-top: 20px;
+}
+
+/* Welcome */
+#welcome .justify {
+    text-align: justify;
+}
+
+/* why */
+#why {
+    background: url('../imgs/bg4.jpg') no-repeat center center/cover;
+}
+
+#why::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+#why .why-box {
+    background: rgba(0, 0, 0, .5);
+    padding-top: 5rem;
+}
+
+#why .why-box .why-img {
+    top: -15%;
+    left: 35%;
+}
+
+/* services */
+#services figcaption {
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+}
+
+#services figure+p {
+    text-align: justify;
+}
+
+/*  Made with love  */
+#love {
+    background: url('../imgs/bg2.jpg') no-repeat center center/cover;
+}
+
+#love::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    filter: contrast(60%);
+}
+
+#love nav a {
+    font-size: .8rem;
+}
+
+/* Customer reviews */
+#customer {
+    background: url('../imgs/bg3.jpg') no-repeat center center/cover;
+}
+
+
+#customer .top {
+    background: #E5E5E5;
+    text-align: justify;
+}
+
+#customer .center {
+    background: #FFCB0F;
+}
+
+#customer .top>p {
+    font-size: .9rem;
+}
+
+/* seperator */
+#sep {
+    border-bottom: 30px solid #484848;
+}
+
+#sep .h-2 {
+    font-size: 1.95rem;
+}
+
+/* Footer */
+#foot {
+    background: url('../imgs/bg1.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+#foot::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+#foot .img {
+    width: 16px !important;
+    filter: brightness(0);
+}
+
+#foot .icons a {
+    height: 36px;
+    width: 36px;
+    padding-top: 5px;
+    color: #000;
+    margin-right: 10px;
+}
+
+#foot nav {
+    margin-left: 30px;
+    position: relative;
+}
+
+#foot .const {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#foot .const+span {
+    font-size: .9rem;
+}
+
+#foot .const~p {
+    font-size: .9rem;
+    width: 95%;
+}
+
+#foot nav a::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    margin-top: 7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    transform: rotate(270deg);
+}
+
+#foot .latest {
+    position: relative;
+    margin-left: 65px;
+}
+
+#foot .latest span {
+    position: absolute;
+    left: -70px;
+    margin-top: -10px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    line-height: 1;
+    font-weight: 600;
+    padding: 5px;
+}
+
+#foot .num {
+    margin-left: 35px;
+}
+
+/* Copyright */
+.copy {
+    background: #1A1C27;
+}
+
+@media (min-width: 768px) {
+    #head>.container {
+        margin-top: 10%;
+    }
+
+    #head .big {
+        font-size: 45px;
+        line-height: .9;
+    }
+
+    /* why */
+    #why .why-box .why-img {
+        left: 30%;
+    }
+
+    /* services */
+    #services figure+p {
+        width: 75%;
+        margin-left: 25px;
+    }
+
+    /* Customer reviews */
+    #customer .top {
+        margin-bottom: 20px;
+    }
+
+    #customer .top+img {
+        transform: rotate(-90deg);
+        height: 15px !important;
+        position: absolute;
+        left: 77.7%;
+        top: 30px;
+    }
+
+    /* Seperator */
+    #sep .h-2 {
+        font-size: 2.1rem;
+    }
+
+    /* Footer */
+    #foot .row div:last-of-type p {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    #head .big {
+        font-size: 60px;
+    }
+
+    /* why */
+    #why .why-box .why-img {
+        left: 35%;
+    }
+
+    /* services */
+    #services figure+p {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    /*  Made with love */
+    #love [alt="Right"] {
+        height: 185px;
+    }
+
+    /* CUSTOMER REVIEWS */
+    #customer .top {
+        width: 100% !important;
+    }
+
+    #customer .top {
+        margin-bottom: 0px;
+    }
+
+    #customer .top+img {
+        transform: rotate(0deg);
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    /* Seperator */
+    #sep .h-1 {
+        font-size: 1.73rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #head .big {
+        font-size: 75px;
+    }
+
+    /* why */
+    #why .why-box {
+        width: 100% !important;
+    }
+
+    #why .why-box .why-img {
+        left: 30%;
+    }
+
+    /*  Made with love */
+    #love [alt="Right"] {
+        height: 225px;
+    }
+
+    /* Footer */
+    #foot .latest p {
+        margin-bottom: 25px !important;
+    }
+
+    #foot .latest span {
+        margin-top: 0;
+    }
+
+    #foot .row div:last-of-type p {
+        margin-bottom: 50px;
+    }
+}
