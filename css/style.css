@@ -261,6 +261,14 @@
     background: #1A1C27;
 }
 
+@media (max-width: 400px) {
+
+    /* why */
+    #why .why-box .why-img {
+        left: 31.5%;
+    }
+}
+
 @media (min-width: 768px) {
     #head>.container {
         margin-top: 10%;
